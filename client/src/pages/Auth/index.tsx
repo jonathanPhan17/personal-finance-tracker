@@ -1,5 +1,16 @@
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton} from '@clerk/clerk-react'
+
 export const Auth = () => {
     return (
-        <h1>Sign In</h1>
+        <div className='sign-in-container'>
+            <SignedOut>
+                <SignUpButton mode='modal'/>
+                <SignInButton mode='modal'/>
+            </SignedOut>
+
+            <SignedIn>
+                <UserButton />
+            </SignedIn>
+        </div>
     )
 }
