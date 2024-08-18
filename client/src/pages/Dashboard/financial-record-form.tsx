@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useUser } from "@clerk/clerk-react";
 import { useFinancialRecords } from "../../contexts/financial-record-context";
+import './financial-record.css';
 
 export const FinancialRecordForm = () => {
 
